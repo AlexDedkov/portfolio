@@ -5,7 +5,7 @@ const Extracurricular = () => {
   return (
     <section id="extracurricular" className="my-5">
       <div className="container">
-        <h2>Extracurricular Activities</h2>
+        <h2 className='activities'>Extracurricular Activities</h2>
         <ul className="list-unstyled">
           <li>
             <h4>Programming Club Member</h4>

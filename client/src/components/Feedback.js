@@ -48,7 +48,7 @@ const FeedbackForm = () => {
 
   return (
     <div>
-      <button className="btn btn-secondary btn-center btn-feedback" onClick={() => setShowModal(true)}>
+      <button className="btn btn-secondary btn-center btn-feedback btn-lg" onClick={() => setShowModal(true)}>
         Give Feedback
       </button>
 

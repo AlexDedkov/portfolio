@@ -1,5 +1,10 @@
 @import "normalize.css/normalize.css";
 
+$textheader: 22px;
+$textheaderleft: 36px;
+$textmainpage: 26px;
+$margintitles: 50px 0px 50px 0px;
+
 .btn-center {
     display: block;
     margin: 0 auto;
@@ -7,4 +12,62 @@
 
 .btn-feedback {
     margin-bottom: 50px;
+    font-size: 50px;
+    border-radius: 12px;
+    padding-bottom: 14px;
+}
+
+.nav-link {
+    font-size: $textheader;
+}
+
+.navbar-brand {
+    font-size: $textheaderleft;
+}
+
+.maintext {
+    font-size: $textmainpage;
+}
+
+h2 {
+    font-size: $textheaderleft;
+}
+
+.aboutmepic{
+    border-radius: 50%;
+    margin-left: 300px;
+}
+
+.textlistskills {
+    font-size: $textmainpage;
+}
+
+.list-inline-item:nth-child(1) {
+    margin-left: 0px;
+}
+.list-inline-item:nth-child(2) {
+    margin-left: 200px;
+}
+.list-inline-item:nth-child(3) {
+    margin-left: 200px;
+}
+
+.certificates {
+    margin: $margintitles;
+}
+
+.education {
+    margin: $margintitles;
+}
+
+.activities {
+    margin: $margintitles;
+}
+
+.contacts{
+    margin: $margintitles;
+}
+
+.footertext {
+    font-size: $textheader;
 }

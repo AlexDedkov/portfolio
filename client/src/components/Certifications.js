@@ -1,13 +1,14 @@
 // src/components/Certifications.js
 import React from 'react';
 
+
 const Certifications = () => {
   return (
     <section id="certifications" className="my-5 ">
       <div className="container">
       <div className='row'>
-        <h2>Certifications</h2>
-        <ul className="list-inline">
+        <h2 className='d-flex justify-content-center certificates'>Сертификаты</h2>
+        <ul className="list-inline d-flex justify-content-center">
           <li className="list-inline-item">
             <h4>Certified JavaScript Developer</h4>
             <p>Issued by [Platform/Institution], [Year]</p>

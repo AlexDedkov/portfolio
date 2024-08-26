@@ -5,9 +5,9 @@ const Contacts = () => {
     <div>
         <section id="contact" className="my-5 ">
       <div className="container">
-        <h2>Contact Me</h2>
+        <h2 className='contacts'>Связаться со мной</h2>
         <p>
-          My contacts are listed below, feel free to reach out.
+          Способы связаться со мной.
         </p>
         <ul className="list-unstyled">
           <li><strong>Email:</strong> <a href="mailto:sasha.dedkov@list.ru">sasha.dedkov@list.ru</a></li>
