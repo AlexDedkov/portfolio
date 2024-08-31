@@ -35,7 +35,7 @@ function Portfolio() {
               <img src="https://placehold.co/350x200/000000/FFFFFF/png" loading="lazy"  className="card-img-top cardimg cardplaceholderimg" alt="Project 3"/>
               <div className="card-body">
                 <h5 className="card-title">Проект 3</h5>
-                <p className="card-text">Здесь будет размещен еще один проект в ближайшее время</p>
+                <p className="card-text">Здесь будет размещен еще один проект в ближайшее время, ссылка деактивирована.</p>
                 <button className="btn btn-dark disabled">Посмотреть</button>
               </div>
             </div>
