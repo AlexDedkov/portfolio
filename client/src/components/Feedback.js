@@ -1,6 +1,10 @@
-// src/components/FeedbackForm.js
+// Feedback form block
+
+
 import React, { useState } from 'react';
 import Modal from './Modal';
+
+//Logic behind sending stuff to server
 
 const FeedbackForm = () => {
   const [showModal, setShowModal] = useState(false);
@@ -46,17 +50,19 @@ const FeedbackForm = () => {
     setShowModal(false);
   };
 
+  //Front view
   return (
-    <div>
-      <button className="btn btn-secondary btn-center btn-feedback btn-lg" onClick={() => setShowModal(true)}>
-        Give Feedback
+    <div className='container'>
+    <div className='d-flex justify-content-center textabovebutt'><p>Хотите чтобы я связался с вами? Воспользуйтесь кнопкой снизу!</p></div>
+        <button className="btn btn-secondary btn-center btn-feedback btn-sm" onClick={() => setShowModal(true)}>
+        Связаться со мной
       </button>
 
       <Modal show={showModal} onClose={() => setShowModal(false)}>
-        <h2>Feedback</h2>
+        <h2>Форма обратной связи</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Имя</label>
             <input 
               type="text" 
               className="form-control" 
@@ -80,7 +86,7 @@ const FeedbackForm = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Сообщение</label>
             <textarea 
               className="form-control" 
               id="message" 
@@ -91,7 +97,7 @@ const FeedbackForm = () => {
               required 
             ></textarea>
           </div>
-          <button type="submit" className="btn btn-dark">Submit</button>
+          <button type="submit" className="btn btnsubmitform btn-dark">Отправить</button>
         </form>
         {responseMessage && <p>{responseMessage}</p>}
       </Modal>

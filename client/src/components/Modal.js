@@ -1,6 +1,7 @@
-// src/components/Modal.js
+//Button for closing feedbackform
+
 import React from 'react';
-import './Modal.css'; // You'll need to create some basic CSS for the modal
+import './Modal.css'; //Custom rules for the modal window
 
 const Modal = ({ show, onClose, children }) => {
   return (

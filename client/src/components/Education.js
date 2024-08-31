@@ -1,4 +1,6 @@
-// src/components/Education.js
+//Education block
+
+
 import React from 'react';
 
 const Education = () => {
@@ -8,14 +10,14 @@ const Education = () => {
         <h2 className='education'>Образование</h2>
         <ul className="list-unstyled">
           <li>
-            <h4>Онлайн Курсы и Сертификаты</h4>
-            <p>Онлайн курс с присвоением квалификации Fullstack Web разработчик</p>
-            <p>Онлайн курс с присвоением квалификации Инженер разработчик</p>
+            <h4 className='eduhead'>Онлайн Курсы и Сертификаты</h4>
+            <p className='edutext'>Онлайн курс с присвоением квалификации Fullstack Web разработчик</p>
+            <p className='edutext'>Онлайн курс с присвоением квалификации Инженер разработчик</p>
           </li>
           <li>
-            <h4>Дополнительное образование</h4>
-            <p>Бакалавр экономики ГУАП</p>
-            <p>Магистр экономики ГУАП</p>
+            <h4 className='eduhead'>Дополнительное образование</h4>
+            <p className='edutext'>Бакалавр экономики ГУАП по направлению высоких технологий</p>
+            <p className='edutext'>Магистр экономики ГУАП по направлению высоких технологий</p>
             <p></p>
           </li>
         </ul>

@@ -1,21 +1,77 @@
+//Import of font family
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Scss styling for the full page*/
+
+/*Normalize before boostrap styles application*/
 @import "normalize.css/normalize.css";
+
+/*Reusable styles*/
 
 $textheader: 22px;
 $textheaderleft: 36px;
 $textmainpage: 26px;
 $margintitles: 50px 0px 50px 0px;
+$backgroundlight: rgb(255, 255, 255);
+$backgrounddarker: rgba(0, 0, 0, 0.43);
+$shadowtextheavy: 2px 2px 5px rgba(0, 0, 0, 0.7);
+$styleBasker: 'Baskervville SC';
 
-.btn-center {
-    display: block;
-    margin: 0 auto;
+// General styles for full page
+
+body,html {
+    font-family: $styleBasker;
+    text-shadow: $shadowtextheavy;
 }
 
-.btn-feedback {
-    margin-bottom: 50px;
-    font-size: 50px;
-    border-radius: 12px;
-    padding-bottom: 14px;
+h4 {
+    font-size: 26px;
+    font-weight: bold;
 }
+
+h2 {
+    font-size: $textheaderleft;
+}
+
+.background {
+    background-blend-mode: darken;
+    background-image: url("./imgs/luca-bravo-XJXWbfSo2f0-unsplash\(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+//Media styles for adaptive viewing
+
+@media (max-width: 768px) {
+  .certificates {
+      margin: 30px 0;
+  }
+  h4 {
+      font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .certificate-img {
+      max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutmepic {
+      margin-right: 20px; 
+    }
+  }
+  
+//Header styles
 
 .nav-link {
     font-size: $textheader;
@@ -25,49 +81,139 @@ $margintitles: 50px 0px 50px 0px;
     font-size: $textheaderleft;
 }
 
-.maintext {
-    font-size: $textmainpage;
+.navttext {
+    color:white;
 }
 
-h2 {
-    font-size: $textheaderleft;
-}
+//About me styles
 
-.aboutmepic{
+.aboutmepic-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .aboutmepic {
     border-radius: 50%;
-    margin-left: 300px;
-}
+    margin-right: 50px; 
+    max-width: 100%; 
+  }
+  
+
+  .maintext {
+    font-size: $textmainpage;
+  }
+  
+  .aboutmesec {
+    padding-top: 100px;
+    margin-bottom: 125px;
+  }
+
+//Skills styles
+
 
 .textlistskills {
     font-size: $textmainpage;
 }
 
-.list-inline-item:nth-child(1) {
-    margin-left: 0px;
+//Portfolio styles
+
+.card-title {
+    font-weight: bold;
 }
-.list-inline-item:nth-child(2) {
-    margin-left: 200px;
+
+
+.projectstitle {
+    margin: $margintitles;
 }
-.list-inline-item:nth-child(3) {
-    margin-left: 200px;
+
+.cardimg {
+    height: 150px;
+}
+
+.cardtildaimg {
+    background-color: rgba(48, 48, 48, 0.993);
+    padding: 20px 5px 20px 5px;
+}
+
+//Certifications styles
+
+.certificate-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
 }
 
 .certificates {
     margin: $margintitles;
 }
 
+//Education styles
+
+.eduhead {
+    font-weight: bold;
+}
+
+.edutext {
+    margin: 25px 0px 25px 0px;
+    font-style: italic;
+    font-family: "Baskervville SC";
+    font-size: 25px;
+}
+
+
 .education {
     margin: $margintitles;
 }
 
-.activities {
-    margin: $margintitles;
+
+//Contacts styles
+
+.contactssec {
+    margin-top: 1000px;
 }
+
 
 .contacts{
     margin: $margintitles;
 }
 
+.contactslinks {
+    font-size: 20px;
+}
+
+//Feedback styles
+
+.btn-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-feedback {
+    margin-bottom: 50px;
+    font-size: 32px;
+    border-radius: 12px;
+    padding-bottom: 7px;
+}
+
+.textabovebutt {
+    margin-bottom: 25px;
+    font-size: $textheaderleft;
+}
+
+.btnsubmitform {
+    margin-top: 10px;
+}
+
+
+//Footer styles
+
 .footertext {
     font-size: $textheader;
 }
+
+
+
+
+
+
+

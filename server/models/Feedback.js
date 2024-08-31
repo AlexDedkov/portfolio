@@ -1,4 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose'); //Import Mongoose
+
+//Create model for data from feedback form
 
 const feedbackSchema = new mongoose.Schema({
   name: {

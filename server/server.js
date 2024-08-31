@@ -1,8 +1,8 @@
 // server.js
 
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
+const express = require('express'); //Import express
+const mongoose = require('mongoose'); //Import MongoDB module
+const cors = require('cors'); //Import CORS
 const Feedback = require('./models/Feedback'); // Import the Feedback model
 
 const app = express();

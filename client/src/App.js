@@ -7,14 +7,14 @@ import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
 import Education from './components/Education';
-import Extracurricular from './components/Extracurricular';
 import FeedbackForm from './components/Feedback';
 
 
 
 const App = () => {
   return (
-    <div className='bg-dark text-white'>
+
+    <div className='bg-dark text-white background'>
       <Header />
       <main>
         <AboutMe/>
@@ -22,12 +22,12 @@ const App = () => {
         <Portfolio/>
         <Certifications/>
         <Education/>
-        <Extracurricular/>
         <Contacts/>
         <FeedbackForm/>
       </main>
       <Footer />
     </div>
+
   );
 };
 export default App;
