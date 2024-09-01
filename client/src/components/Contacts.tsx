@@ -1,6 +1,6 @@
 //Contacts block
 
-import React from 'react';
+
 
 const Contacts = () => {
   return (

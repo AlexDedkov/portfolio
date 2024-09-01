@@ -1,6 +1,5 @@
 //Skills block
 import IconCloud from './icon-cloud';
-import React from 'react';
 
 const slugs = [
   "typescript",

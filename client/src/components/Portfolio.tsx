@@ -1,6 +1,5 @@
 //Portfolio block
 
-import React from 'react';
 
 // Import the images at the top
 import Githublogo from "../imgs/Githublogo.png";

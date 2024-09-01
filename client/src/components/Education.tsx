@@ -1,7 +1,7 @@
 //Education block
 
 
-import React from 'react';
+
 
 const Education = () => {
   return (

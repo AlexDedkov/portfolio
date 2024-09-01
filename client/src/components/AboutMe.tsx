@@ -6,7 +6,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 import aboutmelogo from "../imgs/aboutmelogo.jpg";
-import React from 'react';
 
 const AboutMe = () => {
   return (
